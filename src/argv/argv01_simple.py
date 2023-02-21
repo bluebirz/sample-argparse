@@ -8,6 +8,7 @@ def adder(a, b):
 def get_params(argv):
     a = int(argv[1])
     b = int(argv[2])
+    print(f"argparse: {a= }, {b= }")
     return a, b
 
 

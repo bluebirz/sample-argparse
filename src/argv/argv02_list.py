@@ -7,6 +7,7 @@ def adder_list(param_list):
 
 def get_params(argv):
     params = list(map(int, argv[1:]))
+    print(f"argparse: {params= }")
     return params
 
 
