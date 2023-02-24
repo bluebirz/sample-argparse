@@ -17,11 +17,11 @@ def get_params(args):
     parser = argparse.ArgumentParser()
     parser.add_argument("int_list", type=int, nargs="+", help="a list of integers")
     parser.add_argument(
-        "--ops",
         "-o",
+        "--ops",
         type=str,
         choices=["add", "mult"],
-        help="An operator to perform with",
+        help="an operator to perform with",
     )
     parsed_params = parser.parse_args(args[1:])
     print(f"argparse: {parsed_params= }")
